@@ -1,0 +1,239 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Soulberto Lorenzo Torres}}
+
+Cantarrana, Villa Félix Barreto\ \ \textbullet
+\ \ Casa Magyubeliz \ \textbullet
+\ \ Cumaná, Edo Sucre 6101
+\\
++58 (293) 467-1258 / +58 (412) 085-1147\ \ \textbullet
+\ \ Correo-e: \textit{slorenzot@gmail.com} / Twitter: \textit{@slorenzot}
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experiencia laboral}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Dirección de Información y Comunicación Corporativa (DICC)}}
+		{\textbf{Cumaná, Sucre}}
+	\\
+	\headerrow
+		{\emph{Desarrollador Web - Rectorado de la Universidad de Oriente}}
+		{\emph{2002 -- 2003}}
+
+	\item
+	\headerrow
+		{\textbf{FUNDACITE SUCRE}}
+		{\textbf{Cumaná, Sucre}}
+	\\
+	\headerrow
+		{\emph{Instructor - Programa Academia de Software Libre ASL}}
+		{\emph{2007 -- 2008}}
+	\begin{itemize*}
+		\item Instructor de Usuario Final y herramiento ofimáticas
+		\item Instructor del Nivel de Soporte Técnico
+		\item Instructor del Nivel de Administradores
+	\end{itemize*}
+	
+	\item
+	\headerrow
+		{\textbf{FUNDACITE SUCRE}}
+		{\textbf{Cumaná, Sucre}}
+	\\
+	\headerrow
+		{\emph{Planificador I - Coordinación de Telemática e Innovación Tecnológica}}
+		{\emph{2008 -- 2009}}
+	\begin{itemize*}
+		\item Responsable del Programa Nacional Academia de Software Libre ASL sede Sucre
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Zona Educativa del Estado Sucre}}
+		{\textbf{Cumaná, Sucre}}
+	\\
+	\headerrow
+		{\emph{Jefe de División - Informática y Sistemas}}
+		{\emph{2009 -- 2012}}
+	
+	\item
+	\headerrow
+		{\textbf{Universidad Politécnica del Oeste del Estado Sucre "Clodosbaldo Russian"}}
+		{\textbf{Cumaná, Sucre}}
+	\\
+	\headerrow
+		{\emph{Analista programador - Oficina de Informática y Telemática}}
+		{\emph{2012 -- Presente}}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Educación}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Universidad de Oriente - Núcleo de Sucre}}
+		{\textbf{Cumaná, Edo. Sucre}}
+	\\
+	\headerrow
+		{\emph{Coordinación del Programa de Licenciatura en Informática}}
+		{\emph{1997 -- 2008}}
+	\begin{itemize*}
+		\item Licenciado en Informática.
+	\end{itemize*}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Eventos}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+  \item {\large 2002}
+    \begin{itemize*}
+	    \item Organizador del III Marathon de Programación ACM-UDO Sucre - Universidad de Oriente, Núcleo de Sucre, Cumaná Edo. Sucre.
+    \end{itemize*}
+  \item {\large 2007}
+    \begin{itemize*}
+	    \item Colaborador del 3er Congreso Nacional de Software Libre - Teatro Luís Mariano Rivera, Cumaná Edo. Sucre.
+	    \item Participación en el V Foro Mundial del Conocimiento Libre - Ciudad Bolívar.
+    \end{itemize*}
+  \item {\large 2008}
+    \begin{itemize*}
+	    \item Colaborador en el Festival Latinoamericano de Instalación de Software Libre - Instituto Universitario de Tecnología Cumaná, Edo. Sucre
+	    \item Ponente del XXXI Aniversario del Instituto Universitario de Tecnología Cumaná sede Cariaco - Edo. Sucre 
+	    \item Ponente en el 4to Congreso Nacional de Softwar Libre sede Monagas  Maturín, Edo. Monagas
+	    \item Colaborador en el 4to Congreso Nacional de Softwar Libre sede Sucre - Cumaná, Edo. Sucre
+	    \item Ponente en el XV aniversario del Programa de Licenciatura en Informática - Universidad de Oriente - Núcleo de Sucre, Cumaná Edo. Sucre.
+    \end{itemize*}
+  \item {\large 2009}
+    \begin{itemize*}
+	    \item Colaborador en el Festival Latinoamericano de Instalación de Software Libre - Instituto Universitario de Tecnología Cumaná, Edo. Sucre
+	    \item Ponente en el 5to Congreso Nacional de Softwar Libre sede Sucre - Cumaná, Edo. Sucre
+	    \item Ponente en el I Foro Estadal de Tecnologías Libres Hacia la Implementación de Software Libre en la Administración Pública - Teatro Luís Mariano Rivera - Cumaná, Edo. Sucre
+    \end{itemize*}
+  \item {\large 2010}
+    \begin{itemize*}
+	    \item Colaborador en el Festival Latinoamericano de Instalación de Software Libre - Teatro Luís Mariano Rivera - Cumaná, Edo. Sucre
+	    \item Juez evaluador en el VIII Encuentro Infantil de Informática Educativa - Auditorio IUT Cumaná, Cumaná Edo. Sucre
+    \end{itemize*}
+   \item {\large 2012}
+    \begin{itemize*}
+	    \item Colaborador en el Festival Latinoamericano de Instalación de Software Libre - Universidad Nacional Experimental de las Fuerzas Armadas UNEFA - Cumaná, Edo. Sucre
+    \end{itemize*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Áreas de interés}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{itemize*}
+  \item Software Libre / Open Source
+  \item Investigación y desarrollo de software
+  \item Desarrollo y migración de sistemas
+\end{itemize*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Habilidades técnicas}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+  \item[Conocimientos:]
+  \item - Implementación y administración de redes.
+	\item - Instalación y administración de servicios en plataformas libres
+	\item - Experiencia con diversas distribuciones GNU/Linux, especialmente Debian GNU/Linux
+	\item - Conocimientos en Programación Orientada a Objetos y uso de patrones de diseño
+	\item[Lenguajes:]
+	C, PHP, Java, JavaScript, \LaTeX, Perl, Python, shell script, SQL
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Cualidades}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item - Proactivo, responsable y puntual
+	\item - Defensor insansable del movimiento Software Libre en la región
+  \item - Promotor del uso de los sistemas operativos libres y del desarrollo de proyectos bajo la
+  filosofía GNU
+  \item - Excelente desempeño en sirtuaciones de mucha presión
+  \item - Capacidad de trabajo bajo autoridad, en coordinación y en grupo	
+\end{description*}
+\end{indentsection}
+
+\begin{center}
+  {\small {\footnotesize Actualizado: junio 2012}}
+\end{center}
+
+\end{document}
+
+
+
+
+
+
+
+
+
